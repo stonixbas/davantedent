@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Logo de DavanteDent: un diente sencillo -->
+  <circle cx="32" cy="32" r="31" fill="#ffffff"/>
+  <path d="M20 16c-6 0-9 5-8 12 1 6 4 9 5 15 1 5 2 9 5 9 3 0 3-5 5-10 1-3 2-4 5-4s4 1 5 4c2 5 2 10 5 10 3 0 4-4 5-9 1-6 4-9 5-15 1-7-2-12-8-12-4 0-6 2-12 2s-8-2-12-2z" fill="#1a7f8e"/>
+</svg>

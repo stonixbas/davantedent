@@ -1,0 +1,97 @@
+/* ===== Estilos mínimos de DavanteDent =====
+   Variables arriba: si quieres cambiar el color de la clínica, se cambia aquí
+   una vez y se aplica en toda la página. */
+:root {
+    --color-principal: #1a7f8e;   /* verde azulado "clínico" */
+    --color-fondo: #f4f8f9;
+    --color-texto: #1f2a2e;
+    --color-error: #c62828;
+    --color-borde: #c9d6da;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+/* --- Cabecera --- */
+.cabecera {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+    background: var(--color-principal);
+    color: #fff;
+}
+.cabecera h1 { margin: 0; }
+.cabecera .subtitulo { margin: 0; opacity: .85; }
+.logo { width: 56px; height: 56px; }
+
+/* --- Bloques (formulario y tabla) --- */
+main { max-width: 1100px; margin: 0 auto; padding: 1rem; }
+.bloque {
+    background: #fff;
+    border: 1px solid var(--color-borde);
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* --- Formulario --- */
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border: 1px solid var(--color-borde);
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+.campo { display: flex; flex-direction: column; min-width: 180px; flex: 1; }
+.campo-ancho { width: 100%; }
+label { font-weight: bold; margin-bottom: .25rem; }
+input, textarea {
+    padding: .45rem;
+    border: 1px solid var(--color-borde);
+    border-radius: 4px;
+    font: inherit;
+}
+
+/* Clase que añadirá JS a los campos con error: borde rojo.
+   El mensaje va en el <span class="error"> que hay debajo de cada campo. */
+.campo-error { border: 2px solid var(--color-error); background: #fff5f5; }
+.error { color: var(--color-error); font-size: .85rem; min-height: 1.1em; }
+
+.botones { display: flex; gap: .75rem; margin-top: .5rem; }
+button {
+    padding: .5rem 1.1rem;
+    border: none;
+    border-radius: 4px;
+    background: var(--color-principal);
+    color: #fff;
+    font: inherit;
+    cursor: pointer;
+}
+button:hover { filter: brightness(1.1); }
+#btnCancelar { background: #78909c; }
+
+/* --- Tabla --- */
+.tabla-scroll { overflow-x: auto; }   /* en pantallas estrechas, scroll solo en la tabla */
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: .5rem; border-bottom: 1px solid var(--color-borde); text-align: left; }
+th { background: #e3eff1; }
+#filaVacia td { text-align: center; font-style: italic; color: #78909c; }
+
+/* --- Pie --- */
+.pie {
+    text-align: center;
+    padding: 1rem;
+    background: var(--color-texto);
+    color: #fff;
+    font-size: .9rem;
+}
+.pie p { margin: .25rem 0; }
