@@ -1,7 +1,6 @@
 class Cita {
   constructor(id, fechaCita, horaCita, nombreCliente, apellidoCliente, dniCliente, telefonoCliente,
-    fechaNacimiento, observaciones)
-  {
+    fechaNacimiento, observaciones) {
     this.id = id;
     this.fechaCita = fechaCita;
     this.horaCita = horaCita;
@@ -11,5 +10,5 @@ class Cita {
     this.telefonoCliente = telefonoCliente;
     this.fechaNacimiento = fechaNacimiento;
     this.observaciones = observaciones;
-  } 
+  }
 }
